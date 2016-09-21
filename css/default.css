@@ -1,0 +1,155 @@
+/* Global Styles : DO NOT EDIT */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+/*
+#background {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    background-color: azure;
+    z-index: -1;
+
+}
+    */
+    
+
+#grid_container { 
+	width: 340px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 50%; /* for optical centering */
+	margin-top: -170px;
+	margin-left: -170px;
+}
+
+.mono {
+	font-family: 'Modak', cursive;
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+    color: powderblue;
+}
+
+
+/* Animation Keyframes */
+
+
+
+
+
+@-webkit-keyframes s_move {
+    0%{ top: 0px; left: 0px; color: powderblue; }
+    25% { top: -100px; left: 0px; }
+    50% { top: -100px; left: 100px; }
+    75%,100% { top: 0px; left: 100px; color:bisque; }
+}
+
+#s {
+    position: relative;
+    -webkit-animation: s_move 2.5s ease;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes l_move {
+    0% { left: 0px;  color: powderblue; }
+    100% { left: -90px; color:bisque; }
+}
+
+#l {
+    position: relative;
+    -webkit-animation: l_move 3s ease;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+
+@-webkit-keyframes e_move {
+    0% { left: 0px;  color: powderblue; }
+    50%,100% { left: 70px; color:bisque; }
+}
+
+#e {
+    position: relative;
+    -webkit-animation: e_move 3s ease;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes n_move {
+    0% { left: 0px;  color: powderblue; }
+    50%,100% { left: 70px; color:bisque; }
+}
+
+#n {
+    position: relative;
+    -webkit-animation: n_move 3s ease;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes t_move {
+    0% { top: 0px; left: 0px;  color: powderblue; }
+    25% { top: 100px; left: 0px; }
+    50% { top: 100px; left: -110px; }
+    75%,100% { top: 0px; left: -110px; color:bisque; }
+}
+
+#t {
+    position: relative;
+    -webkit-animation: t_move 2.5s ease;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+
+@-webkit-keyframes i_color {
+    0% { color: powderblue;}
+    100% { color:bisque; }
+}
+
+#i {
+    -webkit-animation: i_color 2.5s ease;    
+    -webkit-animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
+@-webkit-keyframes woah {
+	0%	{ -webkit-transform: rotate(0deg); width: 0px; height: 0px; border-radius: 0%; opacity: 1; }
+	30%	{ -webkit-transform: rotate(0deg); width: 400px; height: 0px; border-radius: 0%; opacity: 1; }
+	45%,100% { -webkit-transform: rotate(0deg); width: 400px; height: 200px; border-radius: 0%; opacity: 1; }
+
+}
+
+
+#square_circle {
+    width: 0px;
+    height: 0px;
+    border: solid lightgrey .5px;
+    position: absolute;
+    left: -98%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    z-index: -1;
+    
+    -webkit-animation: woah 4.5s cubic-bezier(1,0,0,1);
+     -webkit-animation-fill-mode: forwards;
+}
+
+
+
